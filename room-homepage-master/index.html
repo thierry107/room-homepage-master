@@ -2,58 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Room homepage</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="roomstyle.css">
+  <title>room | Furniture for considered spaces</title>
 </head>
 <body>
-  Home
-  Shop
-  About
-  Contact
+  <main>
+    <section class="hero" aria-label="Featured furniture">
+      <div class="hero__visual">
+        <header class="header">
+          <a href="./index.html" class="logo">
+            <img src="./images/logo.svg" alt="room home">
+          </a>
 
-  Discover innovative ways to decorate
+          <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+            <img src="./images/icon-hamburger.svg" alt="">
+          </button>
 
-  We provide unmatched quality, comfort, and style for property owners across the country. 
-  Our experts combine form and function in bringing your vision to life. Create a room in your 
-  own style with our collection and make your property a reflection of you and what you love.
+          <nav class="nav" aria-label="Main navigation">
+            <button class="menu-close" type="button" aria-label="Close navigation">
+              <img src="./images/icon-close.svg" alt="">
+            </button>
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </header>
 
-  Shop now
+        <div class="nav-overlay"></div>
 
-  We are available all across the globe
+        <picture>
+          <source media="(max-width: 700px)" srcset="./images/mobile-image-hero-1.jpg">
+          <img class="hero__image" src="./images/desktop-image-hero-1.jpg" alt="White dining chairs around a wooden table">
+        </picture>
+      </div>
 
-  With stores all over the world, it's easy for you to find furniture for your home or place of business. 
-  Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
-  store locator. Any questions? Don't hesitate to contact us today.
+      <div class="hero__copy" id="home">
+        <article class="slide is-active" data-slide="0">
+          <h1>Discover innovative ways to decorate</h1>
+          <p>
+            We provide unmatched quality, comfort, and style for property owners across the country.
+            Our experts combine form and function in bringing your vision to life. Create a room in
+            your own style with our collection and make your property a reflection of you and what
+            you love.
+          </p>
+        </article>
 
-  Shop now
+        <article class="slide" data-slide="1">
+          <h1>We are available all across the globe</h1>
+          <p>
+            With stores all over the world, it's easy for you to find furniture for your home or
+            place of business. Locally, we're in most major cities throughout the country. Find the
+            branch nearest you using our store locator.
+          </p>
+        </article>
 
-  Manufactured with the best materials
+        <article class="slide" data-slide="2">
+          <h1>Manufactured with the best materials</h1>
+          <p>
+            Our modern furniture store provides a high level of quality. Our company has invested in
+            advanced technology to ensure that every product is made as perfect and as consistent as
+            possible.
+          </p>
+        </article>
 
-  Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
-  to ensure that every product is made as perfect and as consistent as possible. With three decades of 
-  experience in this industry, we understand what customers want for their home and office.
+        <a href="#shop" class="shop-link">
+          Shop now
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
 
-  Shop now
+      <div class="slider-controls">
+        <button class="slider-button prev" type="button" aria-label="Previous slide">
+          <img src="./images/icon-angle-left.svg" alt="">
+        </button>
+        <button class="slider-button next" type="button" aria-label="Next slide">
+          <img src="./images/icon-angle-right.svg" alt="">
+        </button>
+      </div>
+    </section>
 
-  About our furniture
+    <section class="lower-grid" id="about">
+      <img src="./images/image-about-dark.jpg" alt="Dark lounge chair and side table" class="lower-image">
 
-  Our multifunctional collection blends design and function to suit your individual taste.
-  Make each room unique, or pick a cohesive theme that best express your interests and what
-  inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-  or anything in between. Product specialists are available to help you create your dream space.
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
+      <div class="lower-copy">
+        <h2>About our furniture</h2>
+        <p>
+          Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between.
+        </p>
+      </div>
+
+      <img src="./images/image-about-light.jpg" alt="Light modern chair" class="lower-image">
+    </section>
+  </main>
+
+  <script src="room.js"></script>
 </body>
 </html>
