@@ -1,5 +1,8 @@
 # Frontend Mentor - Room homepage
 
+- **Live Demo:** [https://thierry107.github.io/room-homepage-master/](https://thierry107.github.io/room-homepage-master/)
+- **GitHub Repository:** [https://github.com/thierry107/room-homepage-master](https://github.com/thierry107/room-homepage-master)
+
 ![Design preview for the Room homepage coding challenge](preview.jpg)
 
 ## Welcome! 👋
